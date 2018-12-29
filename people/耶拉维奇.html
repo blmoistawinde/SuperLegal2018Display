@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 引入 echarts.js -->
+    <script src="../js/echarts.min.js"></script>
+	<script src='../js/echarts-wordcloud.js'></script>
+	<style>
+		div.wrap{
+			width: 1000px;
+			display: inline-block;
+		}
+		div.left {
+            width:200px;
+			height:300px;
+            float:left;
+        }
+
+        div.right {
+			width: 800px;
+			height: 300px;
+			float: right;
+        }
+	</style>
+	
+</head>
+<body>
+	<div id="person_main">
+	<p> <h3 name="person_name">武磊</h3> <a name="team_name">上海上港</a> <a name="position">前锋</a> </p>
+	<p>进球：<a name="goal">123</a> 助攻：<a name="assist">23</a> </p>
+	<p>称号：<a name="nicknames">123</a> </p>
+	<p>热度：<a name="overall_heat">123</a> 褒贬度：<a name="overall_polar">23</a> </p>
+	<p>特点评价：(100表示为同特点中最佳球员，0则为最差)</p>
+	<!-- <div id="aspects">
+	Your browser does not support the HTML5 canvas tag.
+	</div> -->
+	<canvas id="aspects" width="320" height="350">
+	Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	
+	
+	</div>
+	<div id="topics"></div>
+	<!--Set data via JS-->
+    <script name="match_script" type="text/javascript" src="耶拉维奇.js"> </script>
+</body>
+</html>

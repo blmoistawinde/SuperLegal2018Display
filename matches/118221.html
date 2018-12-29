@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 引入 echarts.js -->
+    <script src="../js/echarts.min.js"></script>
+	<script src='../js/echarts-wordcloud.js'></script>
+	<style>
+		div.wrap{
+			width: 1000px;
+			display: inline-block;
+		}
+		div.left {
+            width:200px;
+			height:300px;
+            float:left;
+        }
+
+        div.right {
+			width: 800px;
+			height: 300px;
+			float: right;
+        }
+	</style>
+	
+</head>
+<body>
+	<div id="match_main">
+	
+	<h1 style='text-align:center'> <a name="host">广州恒大</a> <a name="score">4-5</a> <a name="guest">广州富力</a> </h1>
+	<h2> <a name="news_title">标题</a> </h2>
+	<p> <a name="date0">18-03-02</a> <a name="time0">19:11</a> </p>
+	<p>热度：<a name="overall_heat">123</a> 褒贬度：<a name="overall_polar">23</a> </p>
+	<p>主客队热议度：
+	<a name="host">广州恒大</a> <a name="host_heat">1000</a> VS 
+	<a name="guest">广州富力</a> <a name="guest_heat">800</a>
+	</p>
+	<p>主客队褒贬度：
+	<a name="host">广州恒大</a> <a name="host_polar">-1.0</a> VS 
+	<a name="guest">广州富力</a> <a name="guest_polar">1.0</a>
+	</p>
+
+	<p>热议球员</p>
+	<p>1. <a name="player1" target="_blank">刘殿座</a></p>
+	<p>热议度：<a name="player1_heat">123</a> 褒贬度：<a name="player1_polar">-1</a></p>
+	<!-- <p>关键词:</p>
+	<div name="player1_keywords" style="wnameth: 300px;height:200px;"></div> -->
+	
+	<p>2. <a name="player2" target="_blank">扎哈维</a></p>
+	<p>热议度：<a name="player2_heat">83</a> 褒贬度：<a name="player2_polar">1</a></p>
+	<!-- <p>关键词:</p> -->
+	<!-- <div name="player2_keywords" style="width: 300px;height:200px;"></div> -->
+	
+	<p>3. <a name="player3" target="_blank">曾诚</a></p>
+	<p>热议度：<a name="player3_heat">43</a> 褒贬度：<a name="player3_polar">0.2</a></p>
+    
+	<!-- <p>关键词:</p> -->
+	<!-- <div name="player3_keywords" style="width: 300px;height:200px;"></div> -->
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	</div>
+	<div id="topics">
+<div class='wrap'>
+<div class='left' id='left0'></div>
+<div class='right' id='right0'></div>
+</div><div class='wrap'>
+<div class='left' id='left1'></div>
+<div class='right' id='right1'></div>
+</div></div>
+	<script name="match_script" type="text/javascript" src="118221.js"> </script>
+</body>
+</html>
