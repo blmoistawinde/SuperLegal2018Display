@@ -1,5 +1,5 @@
 # SuperLegal2018Display
-2018中超赛事舆情展示系统，主要使用harvesttext做文本分析得到。
+2018中超赛事舆情展示系统，主要使用[HarvestText](https://github.com/blmoistawinde/HarvestText)做文本分析得到。
 
 `./data/` 存储了所使用到的数据，爬取自“直播吧”APP评论数据，可仅用于学习目的使用，请勿用于商用。
 
